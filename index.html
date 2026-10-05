@@ -46,7 +46,7 @@
     }
   </style>
 </head>
-<body class="bg-brand-cream text-brand-charcoal font-sans antialiased selection:bg-brand-terracotta selection:text-white">
+<body class="bg-brand-cream text-brand-charcoal font-sans antialiased selection:bg-brand-terracotta selection:text-white pb-16 md:pb-0">
 
   <!-- TOP BAR NOTICE -->
   <div class="bg-brand-sand/80 border-b border-brand-border/60 py-2 px-4 text-center text-xs tracking-wider uppercase font-semibold text-brand-charcoal/80 flex items-center justify-center gap-2">
@@ -964,5 +964,30 @@
       });
     }
   </script>
+  <!-- MOBILE BOTTOM NAVIGATION -->
+  <nav class="md:hidden fixed bottom-0 left-0 right-0 bg-brand-surface border-t border-brand-border z-50 px-6 py-3 flex justify-between items-center shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.05)]">
+    <a href="#about" class="flex flex-col items-center gap-1 text-brand-muted hover:text-brand-terracotta transition-colors">
+      <span class="material-symbols-outlined text-xl">auto_stories</span>
+      <span class="text-[10px] font-bold uppercase tracking-wider">Story</span>
+    </a>
+    <a href="#menu" class="flex flex-col items-center gap-1 text-brand-muted hover:text-brand-terracotta transition-colors">
+      <span class="material-symbols-outlined text-xl">restaurant_menu</span>
+      <span class="text-[10px] font-bold uppercase tracking-wider">Menu</span>
+    </a>
+    <a href="https://wa.me/916294413114" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center gap-1 text-emerald-600 hover:text-emerald-500 transition-colors">
+      <span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">chat</span>
+      <span class="text-[10px] font-bold uppercase tracking-wider">WhatsApp</span>
+    </a>
+    <a href="#location" class="flex flex-col items-center gap-1 text-brand-muted hover:text-brand-terracotta transition-colors">
+      <span class="material-symbols-outlined text-xl">location_on</span>
+      <span class="text-[10px] font-bold uppercase tracking-wider">Visit</span>
+    </a>
+  </nav>
+
+  <!-- DESKTOP FLOATING WHATSAPP BUTTON -->
+  <a href="https://wa.me/916294413114" target="_blank" rel="noopener noreferrer" class="hidden md:flex fixed bottom-6 right-6 bg-emerald-500 text-white p-4 rounded-full shadow-lg hover:bg-emerald-600 transition-all z-50 items-center justify-center hover:scale-110" title="Chat with us on WhatsApp">
+    <span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">chat</span>
+  </a>
+
 </body>
 </html>
